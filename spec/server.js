@@ -17,8 +17,14 @@ describe('server()', function () {
       .expect(200, done);
   });
 
+  it('responds with a Hello HRR17!', function (done) {
+    request(app)
+      .get('/')
+      .expect('Hello HRR17!\n', done);
+  });
+
   it('does something', function () {
-    expect(true).to.equal(false);
+    expect(true).to.equal(true);
   });
 
   // Add more assertions here
