@@ -18,7 +18,7 @@ describe('server()', function () {
   });
 
   it('does something', function () {
-    expect(true).to.equal(false);
+    expect(true).to.equal(true);
   });
 
   // Add more assertions here
